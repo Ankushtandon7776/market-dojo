@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#0A1E3D" rx="20"/>
+  
+  <!-- Gold Trading Chart Icon -->
+  <path d="M20 70 L35 50 L45 55 L60 35 L75 45 L85 25" 
+        stroke="#F8B400" 
+        stroke-width="5" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Trading Point Circles -->
+  <circle cx="20" cy="70" r="4" fill="#F8B400"/>
+  <circle cx="35" cy="50" r="4" fill="#F8B400"/>
+  <circle cx="45" cy="55" r="4" fill="#F8B400"/>
+  <circle cx="60" cy="35" r="4" fill="#F8B400"/>
+  <circle cx="75" cy="45" r="4" fill="#F8B400"/>
+  <circle cx="85" cy="25" r="4" fill="#F8B400"/>
+</svg>
