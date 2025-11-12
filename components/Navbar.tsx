@@ -7,14 +7,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#0A1E3D] shadow-lg">
+    <nav className="sticky top-0 z-50 bg-navy shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-[#F8B400] p-2 rounded-lg transition-transform group-hover:scale-105">
+            <div className="bg-gold p-2 rounded-lg transition-transform group-hover:scale-105">
               <svg 
-                className="w-6 h-6 text-[#0A1E3D]" 
+                className="w-6 h-6 text-navy" 
                 fill="currentColor" 
                 viewBox="0 0 24 24"
               >
@@ -22,7 +22,7 @@ export default function Navbar() {
               </svg>
             </div>
             <span className="text-2xl font-bold text-white">
-              Market <span className="text-[#F8B400]">Dojo</span>
+              Market <span className="text-gold">Dojo</span>
             </span>
           </Link>
 
@@ -30,31 +30,31 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
-              className="text-white hover:text-[#F8B400] transition-colors font-medium"
+              className="text-white hover:text-gold transition-colors font-medium"
             >
               Home
             </Link>
             <Link 
               href="/about" 
-              className="text-white hover:text-[#F8B400] transition-colors font-medium"
+              className="text-white hover:text-gold transition-colors font-medium"
             >
               About
             </Link>
             <Link 
               href="/courses" 
-              className="text-white hover:text-[#F8B400] transition-colors font-medium"
+              className="text-white hover:text-gold transition-colors font-medium"
             >
               Courses
             </Link>
             <Link 
               href="/contact" 
-              className="text-white hover:text-[#F8B400] transition-colors font-medium"
+              className="text-white hover:text-gold transition-colors font-medium"
             >
               Contact
             </Link>
             <Link 
               href="/courses" 
-              className="bg-[#F8B400] text-[#0A1E3D] px-6 py-2 rounded-full font-semibold hover:bg-[#ffcc33] transition-all hover:shadow-lg"
+              className="bg-gold text-navy px-6 py-2 rounded-full font-semibold hover:bg-gold-light transition-all hover:shadow-lg"
             >
               Get Started
             </Link>
@@ -64,6 +64,7 @@ export default function Navbar() {
           <button 
             className="md:hidden text-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation menu"
           >
             <svg 
               className="w-6 h-6" 
@@ -96,35 +97,35 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               <Link 
                 href="/" 
-                className="text-white hover:text-[#F8B400] transition-colors font-medium"
+                className="text-white hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="/about" 
-                className="text-white hover:text-[#F8B400] transition-colors font-medium"
+                className="text-white hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link 
                 href="/courses" 
-                className="text-white hover:text-[#F8B400] transition-colors font-medium"
+                className="text-white hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Courses
               </Link>
               <Link 
                 href="/contact" 
-                className="text-white hover:text-[#F8B400] transition-colors font-medium"
+                className="text-white hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </Link>
               <Link 
                 href="/courses" 
-                className="bg-[#F8B400] text-[#0A1E3D] px-6 py-2 rounded-full font-semibold hover:bg-[#ffcc33] transition-all text-center"
+                className="bg-gold text-navy px-6 py-2 rounded-full font-semibold hover:bg-gold-light transition-all text-center"
                 onClick={() => setIsOpen(false)}
               >
                 Get Started

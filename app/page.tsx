@@ -7,20 +7,16 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#0A1E3D] via-[#1a3a5f] to-[#0A1E3D] text-white py-20 md:py-32 overflow-hidden">
+      <section className="relative bg-linear-to-br from-navy via-navy-light to-navy text-white py-20 md:py-32 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&h=900&fit=crop")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}></div>
+          <div className="absolute inset-0 hero-bg"></div>
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Master the Art of <span className="text-[#F8B400]">Stock Market Trading</span>
+              Master the Art of <span className="text-gold">Stock Market Trading</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Learn trading from experts through live sessions, recorded courses, and mentorship. Transform your financial future with Market Dojo.
@@ -41,15 +37,15 @@ export default function Home() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-16 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#F8B400]">10,000+</div>
+                <div className="text-3xl md:text-4xl font-bold text-gold">10,000+</div>
                 <div className="text-sm md:text-base text-gray-300 mt-1">Students</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#F8B400]">50+</div>
+                <div className="text-3xl md:text-4xl font-bold text-gold">50+</div>
                 <div className="text-sm md:text-base text-gray-300 mt-1">Courses</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#F8B400]">4.8★</div>
+                <div className="text-3xl md:text-4xl font-bold text-gold">4.8★</div>
                 <div className="text-sm md:text-base text-gray-300 mt-1">Rating</div>
               </div>
             </div>
@@ -61,7 +57,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A1E3D] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
               Why Choose Market Dojo?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -72,12 +68,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
-              <div className="bg-[#F8B400] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#0A1E3D]" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-navy" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#0A1E3D] mb-4">Expert Mentors</h3>
+              <h3 className="text-xl font-bold text-navy mb-4">Expert Mentors</h3>
               <p className="text-gray-600">
                 Learn from industry veterans with 15+ years of real trading experience in Indian and global markets.
               </p>
@@ -85,12 +81,12 @@ export default function Home() {
 
             {/* Feature 2 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
-              <div className="bg-[#F8B400] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#0A1E3D]" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-navy" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#0A1E3D] mb-4">Live Sessions</h3>
+              <h3 className="text-xl font-bold text-navy mb-4">Live Sessions</h3>
               <p className="text-gray-600">
                 Interactive live classes with Q&A sessions, market analysis, and real-time trading demonstrations.
               </p>
@@ -98,12 +94,12 @@ export default function Home() {
 
             {/* Feature 3 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
-              <div className="bg-[#F8B400] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-[#0A1E3D]" fill="currentColor" viewBox="0 0 20 20">
+              <div className="bg-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-navy" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#0A1E3D] mb-4">Lifetime Access</h3>
+              <h3 className="text-xl font-bold text-navy mb-4">Lifetime Access</h3>
               <p className="text-gray-600">
                 Get lifetime access to course materials, updates, and exclusive trading community support.
               </p>
@@ -116,7 +112,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A1E3D] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
               Popular Courses
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -160,10 +156,10 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-20 bg-linear-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0A1E3D] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
               What Our Students Say
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -195,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#0A1E3D] to-[#1a3a5f] text-white">
+      <section className="py-20 bg-linear-to-r from-navy to-navy-light text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Start Your Trading Journey Today
@@ -210,7 +206,7 @@ export default function Home() {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent border-white text-white hover:bg-white hover:text-[#0A1E3D]">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent border-white text-white hover:bg-white hover:text-navy">
                 Contact Us
               </Button>
             </Link>

@@ -17,9 +17,9 @@ export default function Button({
   const baseStyles = 'font-semibold rounded-full transition-all duration-300 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
-    primary: 'bg-[#F8B400] text-[#0A1E3D] hover:bg-[#ffcc33]',
-    secondary: 'bg-[#0A1E3D] text-white hover:bg-[#1a3a5f]',
-    outline: 'border-2 border-[#F8B400] text-[#F8B400] hover:bg-[#F8B400] hover:text-[#0A1E3D]'
+    primary: 'bg-gold text-navy hover:bg-gold-light',
+    secondary: 'bg-navy text-white hover:bg-navy-light',
+    outline: 'border-2 border-gold text-gold hover:bg-gold hover:text-navy'
   };
 
   const sizes = {

@@ -8,6 +8,8 @@
   --foreground: #171717;
 }
 
+/* @theme is a valid Tailwind CSS v4 directive */
+/* eslint-disable-next-line */
 @theme inline {
   --color-primary: var(--primary-navy);
   --color-accent: var(--accent-gold);
@@ -50,4 +52,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-gold);
+}
+
+/* Hero background image */
+.hero-bg {
+  background-image: url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&h=900&fit=crop");
+  background-size: cover;
+  background-position: center;
 }
