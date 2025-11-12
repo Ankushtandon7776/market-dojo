@@ -1,8 +1,8 @@
-# Market Mojo - Trading Education Platform
+# Market Dojo - Trading Education Platform
 
 A professional, responsive trading education website built with Next.js, TypeScript, and Tailwind CSS.
 
-![Market Mojo](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=400&fit=crop)
+![Market Dojo](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=400&fit=crop)
 
 ## 🚀 Features
 
@@ -84,7 +84,7 @@ npm start
 
 ## 📞 Support
 
-Email: contact@marketmojo.com  
+Email: contact@marketdojo.com  
 Phone: +91 98765 43210
 
 ---
