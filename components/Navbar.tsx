@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -11,19 +12,16 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-gold p-2 rounded-lg transition-transform group-hover:scale-105">
-              <svg 
-                className="w-6 h-6 text-navy" 
-                fill="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path d="M3.5 18.5l6-6 4 4L22 6.92 20.59 5.5 13.5 12.59l-4-4L2 16.09z"/>
-              </svg>
-            </div>
-            <span className="text-2xl font-bold text-white">
-              Market <span className="text-gold">Dojo</span>
-            </span>
+          <Link href="/" className="inline-flex items-center gap-3">
+            <Image
+              src="/market-dojo-logo.jpg"
+              alt="Market Dojo logo"
+              width={120}
+              height={40}
+              className="h-9 w-auto rounded-lg object-contain"
+              priority
+            />
+            <span className="text-base font-bold tracking-wide text-white">Market Dojo</span>
           </Link>
 
           {/* Desktop Navigation */}

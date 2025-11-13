@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import CourseCard from '@/components/CourseCard';
 import Button from '@/components/Button';
@@ -81,42 +82,45 @@ export default function Courses() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#0A1E3D] via-[#1a3a5f] to-[#0A1E3D] text-white py-20 md:py-28">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Transform Your Trading with <span className="text-[#F8B400]">Expert Courses</span>
+      <section className="relative overflow-hidden rounded-b-[32px] bg-navy text-white px-6 py-16 md:px-10 md:py-20 lg:px-12">
+        <div className="absolute inset-0">
+          <Image
+            src="/trading-classroom.jpg"
+            alt="Stock market trading floor"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 1200px"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy-dark/80 to-navy-dark/95" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.07),_transparent_60%)]" />
+        </div>
+        <div className="relative z-10 flex flex-col items-center gap-6 text-center">
+          <div className="space-y-3">
+            <p className="text-xs uppercase tracking-[0.45em] text-gold/80">Market Dojo Courses</p>
+            <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+              Transform Your Trading with <span className="text-gold">Expert Courses</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="mx-auto max-w-3xl text-base text-gray-200 md:text-lg">
               From beginner to advanced, find the perfect course to accelerate your trading journey. Learn from industry experts with proven track records.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-              <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <svg className="w-5 h-5 text-[#F8B400]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
-                </svg>
-                <span>Expert Mentors</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <svg className="w-5 h-5 text-[#F8B400]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
-                </svg>
-                <span>Live Sessions</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <svg className="w-5 h-5 text-[#F8B400]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
-                </svg>
-                <span>Lifetime Access</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                <svg className="w-5 h-5 text-[#F8B400]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
-                  <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/>
-                </svg>
-                <span>Certificate</span>
-              </div>
-            </div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 text-sm font-semibold text-white/90">
+            {['Expert Mentors', 'Live Sessions', 'Lifetime Access', 'Certificate'].map((item) => (
+              <span key={item} className="rounded-full border border-white/30 bg-white/5 px-4 py-2 backdrop-blur">
+                {item}
+              </span>
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact">
+              <Button size="lg">Book a Free Demo</Button>
+            </Link>
+            <Link href="/about">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy">
+                Meet the Mentors
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
