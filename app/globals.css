@@ -60,3 +60,14 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+/* Contact page hero background */
+.contact-hero {
+  /* overlay to keep text readable on top of the graph image */
+  background-image:
+    linear-gradient(180deg, rgba(10, 30, 61, 0.85), rgba(10, 30, 61, 0.75)),
+    url("/contact-page-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
