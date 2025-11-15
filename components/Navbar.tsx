@@ -9,19 +9,26 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-navy shadow-lg">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full pl-2 sm:pl-3 lg:pl-4 pr-4 sm:pr-6 lg:pr-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="inline-flex items-center gap-3">
             <Image
               src="/market-dojo-logo.jpg"
               alt="Market Dojo logo"
-              width={120}
+              width={40}
               height={40}
               className="h-9 w-auto rounded-lg object-contain"
               priority
             />
-            <span className="text-base font-bold tracking-wide text-white">Market Dojo</span>
+            <div className="hidden sm:block leading-tight select-none">
+              <div className="uppercase tracking-[0.35em] text-white/90 text-[10px] md:text-xs">
+                Master the Market
+              </div>
+              <div className="uppercase tracking-[0.35em] text-[#F8B400] text-[10px] md:text-xs">
+                Train Like a Warrior
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

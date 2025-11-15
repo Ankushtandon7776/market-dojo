@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
-import CourseCard from '@/components/CourseCard';
 import TestimonialCard from '@/components/TestimonialCard';
 
 const pillars = [
@@ -71,32 +70,6 @@ const highlightCards = [
   }
 ];
 
-const featuredCourses = [
-  {
-    title: 'Professional Trading Blueprint',
-    description: 'Move from theory to execution with live risk management, options overlays, and daily huddles.',
-    price: '₹87,000',
-    duration: '10 weeks',
-    level: 'Intermediate',
-    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=600&h=400&fit=crop'
-  },
-  {
-    title: 'Options Alpha Lab',
-    description: 'Decode volatility, protect capital, and craft income strategies through live trade audits.',
-    price: '₹94,000',
-    duration: '12 weeks',
-    level: 'Advanced',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop'
-  },
-  {
-    title: 'Fundamentals to Futures',
-    description: 'Blend fundamental research with derivatives execution so you can trade confidently across timeframes.',
-    price: '₹65,000',
-    duration: '8 weeks',
-    level: 'Beginner',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop'
-  }
-];
 
 const testimonials = [
   {
@@ -127,29 +100,34 @@ export default function Home() {
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(248,180,0,0.35),_transparent_55%)]" />
           <div className="absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#F8B400]/40 blur-3xl" />
+          {/* Watermark - constrained to content area (left column) */}
         </div>
 
         <div className="relative z-10 container mx-auto flex flex-col gap-12 lg:flex-row lg:items-center">
-          <div className="lg:w-2/3 space-y-8">
-            <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
-              <Image
-                src="/market-dojo-logo.jpg"
-                alt="Market Dojo logo"
-                width={200}
-                height={80}
-                className="h-16 w-auto object-contain"
-                priority
-              />
-              <div>
-                <p className="text-sm uppercase tracking-[0.4em] text-white/80">Master the Market</p>
-                <p className="text-xs uppercase tracking-[0.6em] text-gold">Train Like a Warrior</p>
+          <div className="lg:w-2/3 space-y-8 relative">
+            {/* Column-scoped watermark */}
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-10" aria-hidden="true" style={{ filter: 'grayscale(100%) blur(4px)' }}>
+              <div className="flex items-center gap-8 md:gap-10 lg:gap-12 max-h-[90%]">
+                <img
+                  src="/market-dojo-logo.jpg"
+                  alt="Market Dojo icon watermark"
+                  className="h-[120px] w-auto md:h-[180px] lg:h-[220px]"
+                />
+                <div className="leading-tight text-center md:text-left select-none">
+                  <div className="uppercase tracking-[0.6em] text-white/90 text-xl md:text-3xl lg:text-4xl">
+                    Master the Market
+                  </div>
+                  <div className="uppercase tracking-[0.6em] text-[#F8B400] text-xl md:text-3xl lg:text-4xl mt-2">
+                    Train Like a Warrior
+                  </div>
+                </div>
               </div>
             </div>
             <h1 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
-              Craft confident trades with live guidance, sharp research, and nonstop support.
+              Dehradun’s first live trading floor institute for serious traders
             </h1>
             <p className="text-lg text-gray-200 md:text-xl">
-              We combine a live trading floor with curated coursework, so you never have to trade alone. Jump into the flow, get real-time feedback, and grow your skillset faster than traditional classrooms.
+              We combine the intensity of live market action with structured, hands‑on education — turning learners into disciplined, data‑driven traders.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/courses">
@@ -266,20 +244,15 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="space-y-3 text-center">
             <p className="text-sm uppercase tracking-[0.4em] text-gray-500">Featured Journeys</p>
-            <h2 className="text-3xl font-bold text-navy md:text-4xl">Hands-on courses designed for real results</h2>
+            <h2 className="text-3xl font-bold text-navy md:text-4xl">Our Programs</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Join the cohort that matches your experience level and get curated mentorship through every trade.
+              We currently offer our flagship 1‑month TradePath program with live floor access and mentorship.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {featuredCourses.map((course) => (
-              <CourseCard key={course.title} {...course} />
-            ))}
-          </div>
           <div className="text-center">
             <Link href="/courses">
-              <Button size="lg">Browse all programs</Button>
+              <Button size="lg">Click to view our courses</Button>
             </Link>
           </div>
         </div>

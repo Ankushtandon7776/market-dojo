@@ -28,10 +28,10 @@ export default function About() {
               </div>
             </div>
             <h1 className="text-2xl font-semibold leading-tight md:text-3xl lg:text-4xl">
-              Empowering Financial Independence through <span className="text-gold">Knowledge</span>
+              MarketDojo: Dehradun’s first live trading floor institute
             </h1>
             <p className="text-sm text-gray-200 md:text-base lg:text-lg leading-relaxed max-w-3xl">
-              MarketDojo is Dehradun's first institute to combine live trading floor access with structured stock market education. We're not just a classroom — we're a dojo. A place where discipline meets data, and traders are trained like warriors.
+              We’re not just a classroom — we’re a dojo, “a place where data meets discipline, and traders are trained like warriors.” We combine the intensity of live market action with structured, hands‑on education — turning learners into disciplined, data‑driven traders.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/courses">
@@ -55,6 +55,165 @@ export default function About() {
         </div>
       </section>
 
+      {/* What We Do */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy">What We Do at MarketDojo</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">Live market coaching, hands‑on strategy building, and immersive trading education inside Dehradun’s first live trading floor.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl shadow p-6">
+              <h3 className="text-xl font-semibold text-navy mb-2">Live Trading Floor Access</h3>
+              <p className="text-gray-600">Trade alongside mentors during actual market hours with real‑time feedback.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h3 className="text-xl font-semibold text-navy mb-2">Intensive Coaching Programs</h3>
+              <p className="text-gray-600">Our 1‑month TradePath course blends technicals, risk, and psychology.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h3 className="text-xl font-semibold text-navy mb-2">Mentorship & Strategy Labs</h3>
+              <p className="text-gray-600">Build, test and refine strategies with seasoned professionals.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h3 className="text-xl font-semibold text-navy mb-2">Workshops & Masterclasses</h3>
+              <p className="text-gray-600">Deep dives into algo, options, volume analysis, and discipline.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h3 className="text-xl font-semibold text-navy mb-2">Community & Collaboration</h3>
+              <p className="text-gray-600">A tribe of serious traders that share, grow, and stay accountable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Learn at MarketDojo */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy">Learn at MarketDojo</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">Learning here isn’t passive — it’s immersive. You don’t just study charts. You trade them.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Technical Analysis Mastery</h4>
+              <p className="text-gray-600 text-sm">Candlestick patterns, chart setups, indicators, and price action.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Trading Psychology</h4>
+              <p className="text-gray-600 text-sm">Discipline, emotional control, and mindset training.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Strategy Execution</h4>
+              <p className="text-gray-600 text-sm">Intraday, swing, and quant‑based approaches.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Risk Management</h4>
+              <p className="text-gray-600 text-sm">Position sizing, stop‑loss logic, and capital protection.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Live Market Coaching</h4>
+              <p className="text-gray-600 text-sm">Real‑time decision‑making during actual trading hours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mentoring */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy">Mentoring at MarketDojo</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">More than guidance — it’s transformation.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl shadow p-6">
+              <h4 className="font-semibold text-navy mb-2">1:1 Strategy Coaching</h4>
+              <p className="text-gray-600 text-sm">Build, test, and refine your approach with expert feedback.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h4 className="font-semibold text-navy mb-2">Live Market Guidance</h4>
+              <p className="text-gray-600 text-sm">Execute trades in real time with mentor support.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h4 className="font-semibold text-navy mb-2">Psychology & Discipline</h4>
+              <p className="text-gray-600 text-sm">Stay focused, manage emotions, and trade with clarity.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h4 className="font-semibold text-navy mb-2">Performance Reviews</h4>
+              <p className="text-gray-600 text-sm">Regular assessments to track progress and improve precision.</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6">
+              <h4 className="font-semibold text-navy mb-2">Accountability & Support</h4>
+              <p className="text-gray-600 text-sm">Structured mentorship and goal tracking.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy">Resources</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">Tools, insights, and support to grow — inside and beyond the classroom.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Trading Playbooks</h4>
+              <p className="text-gray-600 text-sm">Step‑by‑step guides on intraday, swing, and quant strategies.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Market Analysis Reports</h4>
+              <p className="text-gray-600 text-sm">Weekly breakdowns of sectors, setups, and price action.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Video Tutorials</h4>
+              <p className="text-gray-600 text-sm">Mentor‑led sessions on technicals, risk, and psychology.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Psychology Worksheets</h4>
+              <p className="text-gray-600 text-sm">Build emotional control, focus, and consistency.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Charting Tools & Simulators</h4>
+              <p className="text-gray-600 text-sm">Practice strategies in a risk‑free environment.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h4 className="font-semibold text-navy mb-2">Community Access</h4>
+              <p className="text-gray-600 text-sm">Collaborate, share insights, and grow together.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Intro / Who We Are */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy">Who We Are</h2>
+              <p className="text-gray-700 leading-relaxed">
+                We are MarketDojo — Dehradun’s first live trading floor institute, built for those who refuse to settle for theory. We are traders, mentors, and educators who believe that real learning happens in real time. Our dojo isn’t a classroom — it’s a battleground where data meets discipline, and strategies are forged through live market exposure.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Founded by professionals with deep expertise in intraday, swing, and quant trading, MarketDojo blends technical mastery with immersive coaching. We train serious learners to become confident, execution‑ready traders equipped with the mindset, tools, and discipline to thrive in any market.
+              </p>
+              <p className="text-gray-900 font-semibold">We don’t teach trading. We build traders.</p>
+            </div>
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-navy">Why MarketDojo?</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li>• Real‑time market exposure with live coaching</li>
+                <li>• Hands‑on training in intraday, swing, and quant strategies</li>
+                <li>• Premium mentorship from seasoned professionals</li>
+                <li>• Exclusive access to Dehradun’s only trading floor</li>
+                <li>• Limited seats for focused mentorship (serious learners only)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Story */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,15 +223,10 @@ export default function About() {
                 Our Story
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Founded in 2015, Market Dojo started with a simple mission: to democratize stock market education in India. Our founders, veterans with over 15 years of trading experience, recognized the gap between theoretical knowledge and practical trading skills.
-                </p>
-                <p>
-                  We've grown from a small team of passionate traders to India's leading trading education platform, serving over 10,000 students across the country. Our success lies in our practical approach, combining real-world trading experience with structured learning.
-                </p>
-                <p>
-                  Today, Market Dojo stands as a testament to what happens when expert knowledge meets dedication to student success. Every course, every live session, and every piece of content is designed with one goal: to make you a confident, profitable trader.
-                </p>
+                <p>MarketDojo was born from a simple truth: trading mastery isn’t taught — it’s trained.</p>
+                <p>Dehradun had no institute where aspiring traders could sit on a real floor, face real markets, and make real decisions — with expert mentors by their side. So we built one.</p>
+                <p>Founded by seasoned traders and creative visionaries, MarketDojo is North India’s first live trading floor institute — a space where education meets execution. Every chart, every trade, every session is designed to sharpen instincts, build discipline, and forge independent thinkers.</p>
+                <p className="font-semibold text-gray-900">We don’t do lectures. We do live markets. We don’t hand out shortcuts. We build edge.</p>
               </div>
             </div>
             <div className="relative">
@@ -82,8 +236,8 @@ export default function About() {
                 className="rounded-xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-gold text-navy p-6 rounded-lg shadow-xl">
-                <div className="text-3xl font-bold">10+</div>
-                <div className="text-sm font-semibold">Years of Excellence</div>
+                <div className="text-3xl font-bold">1st</div>
+                <div className="text-sm font-semibold">Live Floor in Dehradun</div>
               </div>
             </div>
           </div>
@@ -103,7 +257,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-navy mb-4">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
-                To empower individuals with practical trading knowledge and skills that enable them to make informed investment decisions and achieve financial independence. We are committed to providing high-quality, accessible education that transforms beginners into confident traders.
+                To transform aspiring traders into disciplined market professionals — through immersive, real‑time coaching on Dehradun’s first live trading floor. We don’t teach theory. We build instinct.
               </p>
             </div>
 
@@ -117,7 +271,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-navy mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                To become India's most trusted and comprehensive trading education platform, creating a community of successful traders who contribute to the financial literacy of the nation. We envision a future where every Indian has the knowledge and confidence to participate in wealth creation through smart trading.
+                To build India’s most trusted ecosystem for trading education — where discipline meets data, and ambition meets execution. We envision real‑time mentorship, live market exposure, and tools that help every serious trader thrive.
               </p>
             </div>
           </div>
@@ -136,15 +290,15 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
             <div className="text-center p-6">
               <div className="bg-gold w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h4 className="font-bold text-navy mb-2">Integrity</h4>
-              <p className="text-gray-600 text-sm">Honest and transparent in all our dealings</p>
+              <h4 className="font-bold text-navy mb-2">Discipline Over Drama</h4>
+              <p className="text-gray-600 text-sm">Decisions rooted in strategy, not impulse.</p>
             </div>
 
             <div className="text-center p-6">
@@ -154,8 +308,8 @@ export default function About() {
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h4 className="font-bold text-navy mb-2">Excellence</h4>
-              <p className="text-gray-600 text-sm">Committed to delivering the highest quality education</p>
+              <h4 className="font-bold text-navy mb-2">Real‑Time Learning</h4>
+              <p className="text-gray-600 text-sm">We learn by doing inside live markets.</p>
             </div>
 
             <div className="text-center p-6">
@@ -164,9 +318,8 @@ export default function About() {
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                 </svg>
               </div>
-              <h4 className="font-bold text-navy mb-2">Community</h4>
-              
-              <p className="text-gray-600 text-sm">Building a supportive network of traders</p>
+              <h4 className="font-bold text-navy mb-2">Mentorship That Matters</h4>
+              <p className="text-gray-600 text-sm">Personalized coaching with accountability.</p>
             </div>
 
             <div className="text-center p-6">
@@ -175,8 +328,28 @@ export default function About() {
                   <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h4 className="font-bold text-navy mb-2">Innovation</h4>
-              <p className="text-gray-600 text-sm">Continuously evolving our teaching methods</p>
+              <h4 className="font-bold text-navy mb-2">Integrity in Execution</h4>
+              <p className="text-gray-600 text-sm">Transparency, risk ethics, and respect for capital.</p>
+            </div>
+
+            <div className="text-center p-6">
+              <div className="bg-gold w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 3h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 3h8v2H6V6zm0 4h8v2H6v-2z" />
+                </svg>
+              </div>
+              <h4 className="font-bold text-navy mb-2">Community of Excellence</h4>
+              <p className="text-gray-600 text-sm">We lift each other to higher standards.</p>
+            </div>
+
+            <div className="text-center p-6">
+              <div className="bg-gold w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M3 3h14v2H3zM3 7h10v2H3zM3 11h14v2H3zM3 15h10v2H3z" />
+                </svg>
+              </div>
+              <h4 className="font-bold text-navy mb-2">Innovation with Intent</h4>
+              <p className="text-gray-600 text-sm">Tools and algos that sharpen edge.</p>
             </div>
           </div>
         </div>
