@@ -51,13 +51,14 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#0A1E3D] via-[#1a3a5f] to-[#0A1E3D] text-white py-20 md:py-28">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative contact-hero text-white py-20 md:py-28">
+        <div className="absolute inset-0 bg-[#0A1E3D]/70"></div>
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Get in Touch with <span className="text-[#F8B400]">Market Dojo</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
               We'd love to hear from you. Whether you have a question about courses, pricing, or anything else, our team is ready to answer all your questions.
             </p>
           </div>

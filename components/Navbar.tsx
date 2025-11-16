@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-navy shadow-lg">
+    <nav className="sticky top-0 z-50 bg-white shadow-lg">
       <div className="mx-auto w-full pl-2 sm:pl-3 lg:pl-4 pr-4 sm:pr-6 lg:pr-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
@@ -16,44 +16,44 @@ export default function Navbar() {
             <Image
               src="/market-dojo-logo.jpg"
               alt="Market Dojo logo"
-              width={40}
-              height={40}
-              className="h-9 w-auto rounded-lg object-contain"
+              width={48}
+              height={48}
+              className="h-11 w-auto rounded-lg object-contain"
               priority
             />
             <div className="hidden sm:block leading-tight select-none">
-              <div className="uppercase tracking-[0.35em] text-white/90 text-[10px] md:text-xs">
+              <div className="uppercase tracking-[0.35em] text-black/70 text-[10px] md:text-xs font-semibold">
                 Master the Market
               </div>
-              <div className="uppercase tracking-[0.35em] text-[#F8B400] text-[10px] md:text-xs">
+              <div className="uppercase tracking-[0.35em] text-[#F8B400] text-[10px] md:text-xs font-semibold">
                 Train Like a Warrior
               </div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 text-black">
             <Link 
               href="/" 
-              className="text-white hover:text-gold transition-colors font-medium"
+              className="text-black hover:text-gold transition-colors font-medium"
             >
               Home
             </Link>
             <Link 
               href="/about" 
-              className="text-white hover:text-gold transition-colors font-medium"
+              className="text-black hover:text-gold transition-colors font-medium"
             >
               About
             </Link>
             <Link 
               href="/courses" 
-              className="text-white hover:text-gold transition-colors font-medium"
+              className="text-black hover:text-gold transition-colors font-medium"
             >
               Courses
             </Link>
             <Link 
               href="/contact" 
-              className="text-white hover:text-gold transition-colors font-medium"
+              className="text-black hover:text-gold transition-colors font-medium"
             >
               Contact
             </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <button 
-            className="md:hidden text-white focus:outline-none"
+            className="md:hidden text-black focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation menu"
           >
@@ -98,32 +98,32 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 animate-fade-in">
+          <div className="md:hidden pb-4 animate-fade-in bg-white text-black">
             <div className="flex flex-col space-y-4">
               <Link 
                 href="/" 
-                className="text-white hover:text-gold transition-colors font-medium"
+                className="text-black hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="/about" 
-                className="text-white hover:text-gold transition-colors font-medium"
+                className="text-black hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link 
                 href="/courses" 
-                className="text-white hover:text-gold transition-colors font-medium"
+                className="text-black hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Courses
               </Link>
               <Link 
                 href="/contact" 
-                className="text-white hover:text-gold transition-colors font-medium"
+                className="text-black hover:text-gold transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
